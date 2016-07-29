@@ -12,20 +12,7 @@ namespace AromaRestaurant.Controllers
         {
             return View();
         }
-        public ActionResult Appetizers()
-        {
-            return View();
-        }
-        public ActionResult MainCourse()
-        {
-            return View();
-        }
-        public ActionResult Dessert()
-        {
-            return View();
-        }
-
-
+       
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

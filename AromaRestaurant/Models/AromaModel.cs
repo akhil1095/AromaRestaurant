@@ -12,17 +12,18 @@ namespace AromaRestaurant.Models
         {
         }
 
-        public virtual DbSet<Menu> Menus { get; set; }
+        public virtual DbSet<MenuType> MenuTypes { get; set; }
+        public virtual DbSet<MenuItem> MenuItems { get; set; }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Menu>()
-                .Property(e => e.ThumbImage)
-                .IsUnicode(false);
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Menu>()
+        //        .Property(e => e.ThumbImage)
+        //        .IsUnicode(false);
 
-            modelBuilder.Entity<Menu>()
-                .Property(e => e.LargeImage)
-                .IsUnicode(false);
-        }
+        //    modelBuilder.Entity<Menu>()
+        //        .Property(e => e.LargeImage)
+        //        .IsUnicode(false);
+        //}
     }
 }

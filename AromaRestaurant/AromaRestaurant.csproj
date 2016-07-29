@@ -174,6 +174,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="Controllers\MenuTypeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -182,15 +183,25 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Menu.cs" />
+    <Compile Include="Models\MenuItem.cs" />
+    <Compile Include="Models\MenuType.cs" />
+    <Compile Include="Models\SampleData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\images\background.png" />
+    <Content Include="Assets\images\Biryani.jpg" />
+    <Content Include="Assets\images\chickenbuttermasala.jpg" />
+    <Content Include="Assets\images\dal_makhani.jpg" />
+    <Content Include="Assets\images\gulabjamun.jpg" />
+    <Content Include="Assets\images\kebab.jpg" />
     <Content Include="Assets\images\logo.png" />
+    <Content Include="Assets\images\Matkakulfi.jpg" />
     <Content Include="Assets\images\MenuApp.jpg" />
     <Content Include="Assets\images\MenuDessert.jpg" />
     <Content Include="Assets\images\MenuMain.jpg" />
+    <Content Include="Assets\images\naan.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -274,6 +285,9 @@
     <Content Include="Views\Home\Appetizers.cshtml" />
     <Content Include="Views\Home\MainCourse.cshtml" />
     <Content Include="Views\Home\Dessert.cshtml" />
+    <Content Include="Views\MenuType\Index.cshtml" />
+    <Content Include="Views\MenuType\Browse.cshtml" />
+    <Content Include="Views\MenuType\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
