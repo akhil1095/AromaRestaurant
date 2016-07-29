@@ -8,7 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
-<body>
+<body style="background-image: url('../../Assets/images/background.png');background-size:cover">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -17,23 +17,40 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a href="@Url.Action("Index","Home")" class="navbar-brand"><img id="brand" alt="Brand" src="~/Assets/images/logo.png" /></a>
+                @*@Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
                 @Html.Partial("_LoginPartial")
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        @Html.ActionLink("Home", "Index", "Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Menu", "Index", "Menu")
+                    </li>
+
+                        @*<ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Appetizer", "Appetizer")</li>
+                            <li>@Html.ActionLink("Main Course", "MainCourse")</li>
+                            <li>@Html.ActionLink("Desserts", "Desserts")</li>
+                            <li>@Html.ActionLink("Beverages", "Beverages")</li>
+                        </ul>*@
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+
+            </ul>
             </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        <footer  style="color:beige">
+            <p>&copy; @DateTime.Now.Year - Aroma Restaurant</p>
         </footer>
     </div>
 
